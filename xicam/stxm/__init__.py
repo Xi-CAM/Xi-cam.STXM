@@ -6,7 +6,7 @@ import logging
 from xicam.core import msg
 
 
-class CatalogViewerBlend(StreamSelector, FieldSelector, XArrayView, CatalogView):
+class CatalogViewerBlend(StreamSelector, FieldSelector, CatalogView):
     def __init__(self, *args, **kwargs):
         # CatalogViewerBlend inherits methods from XArrayView and CatalogView
         # super allows us to access both methods when calling super() from Blend
